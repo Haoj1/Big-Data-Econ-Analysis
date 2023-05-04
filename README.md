@@ -33,10 +33,11 @@ df = pd.read_csv('./dataset/airline.csv')
 
 5. alljoined_airlines.csv: This is a CSV file containing information about all airlines from 18-22, including their origin airports, destination, cancellation, cancellation reason, and other relevant data.
 
-6. airline key.csv: This is a CSV file containing an identification code for each airport in the alljoined_airlines.csv file.
+6. airline_key.csv: This is a CSV file containing an identification code for each airport in the alljoined_airlines.csv file.
 
-7. airport info.csv: This is a CSV file containing information about airports, including their names, locations, and other relevant data.
+7. airport_info.csv: This is a CSV file containing information about airports, including their names, identification codes, locations, and other relevant data.
 
+8. passenger data csv: This is a CSV file containin the number of passengers of each airline company from 2002 to 2022, including both international and domestic.
 
 ### Generated data
 1. covid_airline.csv: This is a CSV file after merging covid and airlines datasets, containing airline data, including the county's name, number of flights, number of cancellations, etc.
@@ -57,6 +58,65 @@ df = pd.read_csv('./dataset/airline.csv')
 
 9. geo_airports.csv: This is a CSV file containing information about airports, including their locations and names.
 
+### The link of the dataset
+
+Since some of the datasets are too large (over 1 GB), we organize them into a google drive.
+
+[Dataset Link to Google Drive](https://drive.google.com/drive/folders/1meuEqb81q4-Gjq2OZwNXn0zn1_0Vac5X?usp=share_link)
+
+## Instructions of Python code and Dataset Dependencies
+
+### Domestic and International Airline Analysis during Pandemic
+
+
+1. ### Import required libraries: 
+    - pandas
+    - numpy
+    - matplotlib
+    - sklearn
+
+2. ### Load the raw datasets:
+    - passenger_data.csv
+    - COVID-19_Vaccinations_in_the_United_States_County.csv
+    - alljoined_airlines.csv
+    - airline_key.csv
+    - airport_info.csv
+    - cb_2017_us_county_5m
+    - cb_2017_us_state_5m
+
+3. ### Clean and preprocess the data:
+    - Execute the AirportFilter.ipynb, CovidFilter.ipynb
+    - Handle missing values
+    - Convert data types
+    - Remove unnecessary columns
+    #### Generate clean data
+    - geo_airports_week.csv
+    - airline_county_gdf.csv
+    #### Merged two datasets to study their correlation.
+    - Execute Covid_Airline_Merge.ipynb
+    - Generate covid_airline.csv
+
+4. ### Analyze the data.
+    - Execute Data_Analysis.ipynb
+
+5. ### Perform exploratory data analysis (EDA):
+    - Plot histograms of the decreasing of airlines from 2018 to 2022
+    - Plot scatter plots
+    - Plot line plots to show the changes before and after pandemic
+
+6. ### Perform statistical analysis:
+    - Calculate the mean, median, and sum of the total airline numbers
+    - Calculate the standard deviation
+    - Perform hypothesis testing
+    - Perform linear regression for hypotheses of possible correlation.
+
+7. ### Create visualizations:
+    - Plot bar charts
+    - Plot line charts
+    - Plot the result of each airport in a domestic geo graph 
+
+8. ### Save the results to a file:
+    - Data_Analysis.html
 
 
 ## Contributing

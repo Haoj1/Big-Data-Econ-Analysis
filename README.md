@@ -121,7 +121,7 @@ Since some of the datasets are too large (over 1 GB), we organize them into a go
 
 8. ### Save the final analysis results to a file including all figures and regression results:
     - [Data_Analysis.html](https://github.com/Haoj1/Big-Data-Econ-Analysis/blob/main/Data_Analysis.html)
-    - [international_domestic_stuff.ipynb] 
+    - [international_domestic_stuff.ipynb](https://github.com/Haoj1/Big-Data-Econ-Analysis/blob/main/international_domestic_stuff.ipynb)
 
 
 ## Contributing

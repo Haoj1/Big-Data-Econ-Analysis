@@ -74,6 +74,7 @@ Since some of the datasets are too large (over 1 GB), we organize them into a go
     - numpy
     - matplotlib
     - sklearn
+    - geopandas
 
 2. ### Load the raw datasets:
     - passenger_data.csv
@@ -98,6 +99,7 @@ Since some of the datasets are too large (over 1 GB), we organize them into a go
 
 4. ### Analyze the data.
     - Execute Data_Analysis.ipynb
+    - international_domestic_stuff.ipynb
 
 5. ### Perform exploratory data analysis (EDA):
     - Plot histograms of the decreasing of airlines from 2018 to 2022
@@ -115,8 +117,8 @@ Since some of the datasets are too large (over 1 GB), we organize them into a go
     - Plot line charts
     - Plot the result of each airport in a domestic geo graph 
 
-8. ### Save the analysis results to a file:
-    - Data_Analysis.html
+8. ### Save the final analysis results to a file including all figures and regression results:
+    - [Data_Analysis.html](https://github.com/Haoj1/Big-Data-Econ-Analysis/blob/main/Data_Analysis.html)
 
 
 ## Contributing

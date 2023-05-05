@@ -115,7 +115,7 @@ Since some of the datasets are too large (over 1 GB), we organize them into a go
     - Plot line charts
     - Plot the result of each airport in a domestic geo graph 
 
-8. ### Save the results to a file:
+8. ### Save the analysis results to a file:
     - Data_Analysis.html
 
 
